@@ -1,0 +1,25 @@
+@import "../../stylesheets/atoms/base";
+
+html {
+  background-image: url("../../images/gradient2.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  margin: 15rem 10rem;
+  color: $white;
+  font-family: $butler;
+  font-weight: $bold;
+
+  &:hover {
+    .cta {
+      text-decoration: underline;
+    }
+  }
+}
+
+.up {
+}

@@ -1,0 +1,126 @@
+@import "../../stylesheets/atoms/base";
+
+html {
+  background-image: url("../../images/gradient1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .background {
+    position: absolute;
+
+    color: $white;
+    opacity: 0.1;
+
+    font-family: $butler;
+    font-weight: $bold;
+    line-height: 100px;
+  }
+
+  .text {
+    padding-top: 20rem;
+    color: $white;
+
+    font-size: 1rem;
+    font-family: $spartan;
+    line-height: 30px;
+  }
+
+  .first {
+    height: 100vh;
+
+    .first-b {
+      top: 4rem;
+      width: 40rem;
+
+      font-size: 8rem;
+      line-height: 120px;
+    }
+
+    .text {
+      p {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+    }
+  }
+
+  .second {
+    height: 100vh;
+
+    margin-top: 60rem;
+
+    .second-b {
+      top: 130rem;
+      right: 0;
+      width: 60rem;
+
+      text-align: right;
+    }
+
+    .text {
+      p {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+
+  .third {
+    height: 100vh;
+
+    margin-top: 90rem;
+
+    .third-b {
+      top: 240rem;
+      width: 50rem;
+
+      font-size: 15rem;
+      line-height: 250px;
+    }
+
+    .text {
+      p {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+    }
+  }
+
+  .fourth {
+    height: 100vh;
+
+    margin-top: 50rem;
+
+    .fourth-b {
+      right: 0;
+      width: 50rem;
+
+      text-align: right;
+    }
+
+    .text {
+      p {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+
+  .fifth {
+    height: 100vh;
+
+    .fifth-b {
+      width: 70rem;
+
+      font-size: 6rem;
+    }
+
+    .text {
+      p {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+    }
+  }
+}
