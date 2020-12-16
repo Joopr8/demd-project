@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/e50f08c648d677fc2b0f52ac98afb797?family=Ayuthaya);
 /* weight */
 .col-3 {
   display: -ms-grid;
@@ -151,7 +152,7 @@ html {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 6.5rem;
 }
 
 html {
@@ -167,9 +168,15 @@ html {
   color: #EBEBEB;
   font-family: ButlerStencil, serif;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .title:hover .cta {
   text-decoration: underline;
+}
+
+.cta {
+  color: #EBEBEB;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */

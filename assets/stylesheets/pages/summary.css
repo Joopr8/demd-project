@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/e50f08c648d677fc2b0f52ac98afb797?family=Ayuthaya);
 /* weight */
 .col-3 {
   display: -ms-grid;
@@ -151,11 +152,11 @@ html {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 6.5rem;
 }
 
 html {
-  background-image: url("../../images/gradient1.png");
+  background-image: url("../../images/gradient3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,6 +179,17 @@ html .text {
   line-height: 30px;
 }
 
+html .text .reference {
+  text-decoration: none;
+  color: #EBEBEB;
+}
+
+html .text p:hover .reference {
+  font-size: 1rem;
+  font-family: Ayuthaya;
+  text-decoration: underline;
+}
+
 html .first {
   height: 100vh;
 }
@@ -197,13 +209,13 @@ html .first .text p {
 
 html .second {
   height: 100vh;
-  margin-top: 60rem;
+  margin-top: 120rem;
 }
 
 html .second .second-b {
-  top: 130rem;
+  top: 190rem;
   right: 0;
-  width: 60rem;
+  width: 70rem;
   text-align: right;
 }
 
@@ -215,11 +227,11 @@ html .second .text p {
 
 html .third {
   height: 100vh;
-  margin-top: 90rem;
+  margin-top: 100rem;
 }
 
 html .third .third-b {
-  top: 240rem;
+  top: 350rem;
   width: 50rem;
   font-size: 15rem;
   line-height: 250px;
@@ -238,8 +250,10 @@ html .fourth {
 
 html .fourth .fourth-b {
   right: 0;
-  width: 50rem;
+  width: 80rem;
+  font-size: 9rem;
   text-align: right;
+  line-height: 150px;
 }
 
 html .fourth .text p {

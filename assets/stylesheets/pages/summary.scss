@@ -1,7 +1,7 @@
 @import "../../stylesheets/atoms/base";
 
 html {
-  background-image: url("../../images/gradient1.png");
+  background-image: url("../../images/gradient3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,6 +24,19 @@ html {
     font-size: 1rem;
     font-family: $spartan;
     line-height: 30px;
+
+    .reference {
+      text-decoration: none;
+      color: $white;
+    }
+
+    p:hover {
+      .reference {
+        font-size: 1rem;
+        font-family: $ayuthaya;
+        text-decoration: underline;
+      }
+    }
   }
 
   .first {
@@ -48,12 +61,12 @@ html {
   .second {
     height: 100vh;
 
-    margin-top: 60rem;
+    margin-top: 120rem;
 
     .second-b {
-      top: 130rem;
+      top: 190rem;
       right: 0;
-      width: 60rem;
+      width: 70rem;
 
       text-align: right;
     }
@@ -69,10 +82,10 @@ html {
   .third {
     height: 100vh;
 
-    margin-top: 90rem;
+    margin-top: 100rem;
 
     .third-b {
-      top: 240rem;
+      top: 350rem;
       width: 50rem;
 
       font-size: 15rem;
@@ -94,9 +107,11 @@ html {
 
     .fourth-b {
       right: 0;
-      width: 50rem;
+      width: 80rem;
 
+      font-size: 9rem;
       text-align: right;
+      line-height: 150px;
     }
 
     .text {

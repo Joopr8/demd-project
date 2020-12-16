@@ -13,6 +13,7 @@ html {
   color: $white;
   font-family: $butler;
   font-weight: $bold;
+  text-decoration: none;
 
   &:hover {
     .cta {
@@ -21,5 +22,7 @@ html {
   }
 }
 
-.up {
+.cta {
+  color: $white;
+  text-decoration: none;
 }
