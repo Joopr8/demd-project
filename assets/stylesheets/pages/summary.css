@@ -185,8 +185,6 @@ html .text .reference {
 }
 
 html .text p:hover .reference {
-  font-size: 1rem;
-  font-family: Ayuthaya;
   text-decoration: underline;
 }
 
