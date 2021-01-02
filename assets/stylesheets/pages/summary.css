@@ -156,7 +156,7 @@ h1 {
 }
 
 html {
-  background-image: url("../../images/gradient3.png");
+  background-image: url("../../images/gradient1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -182,10 +182,19 @@ html .text {
 html .text .reference {
   text-decoration: none;
   color: #EBEBEB;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(172, 106, 172, 0)), color-stop(0%, #EBEBEB), color-stop(60%, #EBEBEB), color-stop(60%, rgba(172, 106, 172, 0)));
+  background-image: linear-gradient(to bottom, rgba(172, 106, 172, 0) 50%, #EBEBEB 0%, #EBEBEB 60%, rgba(172, 106, 172, 0) 60%);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.8s linear;
+  transition: 0.8s linear;
+  font-weight: 700;
 }
 
 html .text p:hover .reference {
-  text-decoration: underline;
+  background-size: 100% 2rem;
+  opacity: 0.2;
 }
 
 html .first {
@@ -215,6 +224,7 @@ html .second .second-b {
   right: 0;
   width: 70rem;
   text-align: right;
+  line-height: 120px;
 }
 
 html .second .text p {
@@ -265,8 +275,9 @@ html .fifth {
 }
 
 html .fifth .fifth-b {
-  width: 70rem;
-  font-size: 6rem;
+  width: 80rem;
+  font-size: 7rem;
+  line-height: 100px;
 }
 
 html .fifth .text p {

@@ -169,6 +169,8 @@ html {
   font-family: ButlerStencil, serif;
   font-weight: 700;
   text-decoration: none;
+  line-height: 8rem;
+  opacity: 0.8;
 }
 
 .title:hover .cta {
@@ -176,7 +178,7 @@ html {
 }
 
 .title .cta {
-  background-image: linear-gradient(transparent calc(65% - 10px), #bc5020 5px);
+  background-image: linear-gradient(transparent calc(65% - 10px), #327697 5px);
   background-size: 0;
   background-repeat: no-repeat;
   display: inline;
