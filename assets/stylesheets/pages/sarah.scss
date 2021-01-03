@@ -1,0 +1,33 @@
+@import "../../stylesheets/atoms/base";
+
+.container {
+  margin: 0 auto;
+  width: 60rem;
+
+  .messages {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+
+    .bubble {
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 0.2rem;
+
+      p {
+        color: white;
+        font-family: $spartan;
+        font-size: 1rem;
+      }
+    }
+    .pink {
+      background-color: $pink;
+      align-self: flex-end;
+    }
+
+    .blue {
+      background-color: $blue;
+      align-self: flex-start;
+    }
+  }
+}
