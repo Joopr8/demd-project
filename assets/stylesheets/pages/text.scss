@@ -1,0 +1,51 @@
+@import "../../stylesheets/atoms/base";
+
+html {
+  background-color: $blue;
+}
+
+.container {
+  .quote {
+    grid-column: 1/5;
+    margin-bottom: 10rem;
+
+    font-family: $butler;
+    font-size: 7rem;
+    line-height: 9rem;
+  }
+
+  .intro {
+    height: 100vh;
+    color: $black;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .conclusion {
+    color: $white;
+  }
+
+  .history {
+    grid-column: 1/5;
+    background-color: $black;
+    padding: 6rem;
+
+    .title {
+      text-align: center;
+      color: $yellow;
+      margin-bottom: 5rem;
+    }
+
+    .text {
+      color: $white;
+      font-family: $spartan;
+      font-size: 1.5rem;
+      line-height: 37.5px;
+
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

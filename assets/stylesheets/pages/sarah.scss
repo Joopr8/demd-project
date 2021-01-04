@@ -1,33 +1,95 @@
 @import "../../stylesheets/atoms/base";
 
-.container {
-  margin: 0 auto;
-  width: 60rem;
+html {
+  background-color: $white;
 
-  .messages {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10rem;
+  .container {
+    margin: 0 auto;
+    width: 60rem;
 
-    .bubble {
-      border-radius: 1rem;
-      padding: 2rem;
-      margin-bottom: 0.2rem;
+    .messages {
+      display: flex;
+      flex-direction: column;
+      margin: 5rem 0;
 
-      p {
-        color: white;
-        font-family: $spartan;
-        font-size: 1rem;
+      .bubble {
+        border-radius: 1.5rem;
+        padding: 2rem;
+        margin-bottom: 0.2rem;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 60%;
+          width: 0;
+          height: 0;
+          border: 20px solid transparent;
+          border-bottom: 0;
+          margin-top: -10px;
+        }
+
+        .emoji {
+          font-size: 1.5rem;
+        }
+
+        p {
+          color: white;
+          font-family: $spartan;
+          font-size: 1rem;
+        }
       }
-    }
-    .pink {
-      background-color: $pink;
-      align-self: flex-end;
-    }
 
-    .blue {
-      background-color: $blue;
-      align-self: flex-start;
+      .pink {
+        background-color: $pink;
+        align-self: flex-end;
+
+        &::after {
+          right: 0;
+          border-left-color: $pink;
+          border-right: 0;
+          margin-right: -20px;
+        }
+      }
+
+      .blue {
+        background-color: $blue;
+        align-self: flex-start;
+
+        &::after {
+          left: 0;
+          border-right-color: $blue;
+          border-left: 0;
+          margin-left: -20px;
+        }
+      }
+
+      .productor {
+        &::before {
+          content: "Produtor Porno";
+          position: absolute;
+          top: -1rem;
+          left: 0.5rem;
+          width: 200px;
+
+          font-family: $spartan;
+          font-size: 0.7rem;
+        }
+      }
+
+      .joana {
+        &::before {
+          content: "Joana";
+          position: absolute;
+          top: -1rem;
+          right: 1rem;
+          width: 100%;
+
+          text-align: right;
+          font-family: $spartan;
+          font-size: 0.7rem;
+        }
+      }
     }
   }
 }

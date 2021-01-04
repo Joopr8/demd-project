@@ -156,97 +156,56 @@ h1 {
 }
 
 html {
-  background-color: #EBEBEB;
+  background-color: #509FC5;
 }
 
-html .container {
-  margin: 0 auto;
-  width: 60rem;
+.container .quote {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  margin-bottom: 10rem;
+  font-family: ButlerStencil, serif;
+  font-size: 7rem;
+  line-height: 9rem;
 }
 
-html .container .messages {
+.container .intro {
+  height: 100vh;
+  color: #3C3C3C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-html .container .messages .bubble {
-  border-radius: 1.5rem;
-  padding: 2rem;
-  margin-bottom: 0.2rem;
-  position: relative;
+.container .conclusion {
+  color: #EBEBEB;
 }
 
-html .container .messages .bubble::after {
-  content: "";
-  position: absolute;
-  top: 60%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-bottom: 0;
-  margin-top: -10px;
+.container .history {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  background-color: #3C3C3C;
+  padding: 6rem;
 }
 
-html .container .messages .bubble .emoji {
+.container .history .title {
+  text-align: center;
+  color: #F7D540;
+  margin-bottom: 5rem;
+}
+
+.container .history .text {
+  color: #EBEBEB;
+  font-family: Spartan, serif;
   font-size: 1.5rem;
+  line-height: 37.5px;
 }
 
-html .container .messages .bubble p {
-  color: white;
-  font-family: Spartan, serif;
-  font-size: 1rem;
+.container .history .text p {
+  margin-bottom: 2rem;
 }
-
-html .container .messages .pink {
-  background-color: #DF6694;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-html .container .messages .pink::after {
-  right: 0;
-  border-left-color: #DF6694;
-  border-right: 0;
-  margin-right: -20px;
-}
-
-html .container .messages .blue {
-  background-color: #509FC5;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-html .container .messages .blue::after {
-  left: 0;
-  border-right-color: #509FC5;
-  border-left: 0;
-  margin-left: -20px;
-}
-
-html .container .messages .productor::before {
-  content: "Produtor Porno";
-  position: absolute;
-  top: -1rem;
-  left: 0.5rem;
-  width: 200px;
-  font-family: Spartan, serif;
-  font-size: 0.7rem;
-}
-
-html .container .messages .joana::before {
-  content: "Joana";
-  position: absolute;
-  top: -1rem;
-  right: 1rem;
-  width: 100%;
-  text-align: right;
-  font-family: Spartan, serif;
-  font-size: 0.7rem;
-}
-/*# sourceMappingURL=sarah.css.map */
+/*# sourceMappingURL=text.css.map */
