@@ -1,0 +1,24 @@
+@import "../../stylesheets/atoms/base";
+
+.container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .person {
+    display: inline-block;
+
+    height: 100vh;
+    width: 80vw;
+    background-color: $black;
+  }
+
+  .animal {
+    display: inline-block;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: $blue;
+    margin: 0 -10px;
+  }
+}

@@ -180,7 +180,6 @@ html .text {
 }
 
 html .text .reference {
-  text-decoration: none;
   color: #EBEBEB;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(172, 106, 172, 0)), color-stop(0%, #EBEBEB), color-stop(60%, #EBEBEB), color-stop(60%, rgba(172, 106, 172, 0)));
@@ -192,7 +191,7 @@ html .text .reference {
   font-weight: 700;
 }
 
-html .text p:hover .reference {
+html .text .reference:hover {
   background-size: 100% 2rem;
   opacity: 0.2;
 }
