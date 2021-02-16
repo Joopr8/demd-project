@@ -10,20 +10,31 @@ html {
     margin-bottom: 10rem;
 
     font-family: $butler;
-    font-size: 7rem;
+    font-size: 6rem;
     line-height: 9rem;
-  }
 
-  .intro {
-    height: 100vh;
-    color: $black;
+    @include desktop {
+      line-height: 7rem;
+      font-size: 4rem;
+    }
 
-    display: flex;
-    align-items: center;
-  }
+    .intro {
+      color: $black;
+      margin: 10rem 0;
 
-  .conclusion {
-    color: $white;
+      .pink {
+        color: $pink;
+      }
+    }
+
+    .conclusion {
+      margin: 10rem 0;
+      color: $white;
+
+      .yellow {
+        color: $yellow;
+      }
+    }
   }
 
   .history {
@@ -31,10 +42,26 @@ html {
     background-color: $black;
     padding: 6rem;
 
+    @include desktop {
+      padding: 4rem;
+    }
+
+    @include phablet {
+      padding: 2rem;
+    }
+
     .title {
       text-align: center;
       color: $yellow;
       margin-bottom: 5rem;
+
+      @include desktop {
+        font-size: 4.5rem;
+      }
+
+      @include phablet {
+        font-size: 3rem;
+      }
     }
 
     .text {
@@ -45,6 +72,37 @@ html {
 
       p {
         margin-bottom: 2rem;
+
+        @include phablet {
+          margin-bottom: 1rem;
+        }
+      }
+
+      @include desktop {
+        font-size: 1.2rem;
+        line-height: 30px;
+      }
+
+      @include phablet {
+        font-size: 0.9rem;
+        line-height: 20px;
+      }
+    }
+
+    .small {
+      margin-top: 5rem;
+      font-size: 1rem;
+      line-height: 22px;
+      font-weight: 100;
+
+      @include desktop {
+        font-size: 0.9rem;
+        line-height: 20px;
+      }
+
+      @include phablet {
+        font-size: 0.6rem;
+        line-height: 15px;
       }
     }
   }

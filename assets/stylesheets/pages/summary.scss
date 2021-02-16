@@ -5,6 +5,14 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
+  position: relative;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
 
   .background {
     position: absolute;
@@ -15,6 +23,7 @@ html {
     font-family: $butler;
     font-weight: $bold;
     line-height: 100px;
+    z-index: -1;
   }
 
   .text {
@@ -45,11 +54,6 @@ html {
         opacity: 0.2;
       }
     }
-
-    p:hover {
-      .reference {
-      }
-    }
   }
 
   .first {
@@ -67,6 +71,11 @@ html {
       p {
         grid-column-start: 3;
         grid-column-end: 5;
+
+        @include phablet {
+          grid-column-start: 1;
+          grid-column-end: 5;
+        }
       }
     }
   }
@@ -89,6 +98,11 @@ html {
       p {
         grid-column-start: 1;
         grid-column-end: 3;
+
+        @include phablet {
+          grid-column-start: 1;
+          grid-column-end: 5;
+        }
       }
     }
   }
@@ -100,7 +114,7 @@ html {
 
     .third-b {
       top: 350rem;
-      width: 50rem;
+      width: 70%;
 
       font-size: 15rem;
       line-height: 250px;
@@ -110,14 +124,18 @@ html {
       p {
         grid-column-start: 3;
         grid-column-end: 5;
+
+        @include phablet {
+          grid-column-start: 1;
+          grid-column-end: 5;
+        }
       }
     }
   }
 
   .fourth {
     height: 100vh;
-
-    margin-top: 50rem;
+    margin-top: 80rem;
 
     .fourth-b {
       right: 0;
@@ -132,24 +150,41 @@ html {
       p {
         grid-column-start: 1;
         grid-column-end: 3;
+
+        @include phablet {
+          grid-column-start: 1;
+          grid-column-end: 5;
+        }
       }
     }
   }
 
   .fifth {
     height: 100vh;
+    margin-top: 50rem;
 
     .fifth-b {
-      width: 80rem;
+      top: 630rem;
+
+      width: 80%;
 
       font-size: 7rem;
       line-height: 100px;
+
+      @include phablet {
+        top: 590rem;
+      }
     }
 
     .text {
       p {
         grid-column-start: 3;
         grid-column-end: 5;
+
+        @include phablet {
+          grid-column-start: 1;
+          grid-column-end: 5;
+        }
       }
     }
   }

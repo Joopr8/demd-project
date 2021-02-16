@@ -3,8 +3,8 @@
 .col-3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (20rem)[4];
-      grid-template-columns: repeat(4, 20rem);
+  -ms-grid-columns: (20%)[4];
+      grid-template-columns: repeat(4, 20%);
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   -webkit-box-pack: center;
@@ -156,28 +156,83 @@ h1 {
 }
 
 html {
-  background-image: url("../../images/gradient2.png");
+  background-image: url("../../images/background1.gif");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.title {
+.container {
   margin: 15rem 10rem;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    margin: 12rem 7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 9rem 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    margin: 5rem 3rem;
+  }
+}
+
+.container .title {
   color: #EBEBEB;
   font-family: ButlerStencil, serif;
   font-weight: 700;
   text-decoration: none;
   line-height: 8rem;
-  opacity: 0.8;
+  margin-bottom: 5rem;
 }
 
-.title:hover .cta {
+@media (max-width: 1400px) {
+  .container .title {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container .title {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .container .title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .container .title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+.container .title:hover .cta {
   background-size: 100%;
 }
 
-.title .cta {
+.container .title .cta {
   background-image: linear-gradient(transparent calc(65% - 10px), #327697 5px);
   background-size: 0;
   background-repeat: no-repeat;
@@ -187,8 +242,34 @@ html {
   z-index: -1;
 }
 
-.cta {
+.container .cta {
   color: #EBEBEB;
   text-decoration: none;
+}
+
+.container .authors {
+  color: #EBEBEB;
+  font-family: ButlerStencil, serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media (max-width: 750px) {
+  .container .authors {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.container .authors .blue {
+  color: #509FC5;
+}
+
+.container .authors .pink {
+  color: #DF6694;
+}
+
+.container .authors .orange {
+  color: #E07748;
 }
 /*# sourceMappingURL=index.css.map */

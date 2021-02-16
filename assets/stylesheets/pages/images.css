@@ -3,8 +3,8 @@
 .col-3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (20rem)[4];
-      grid-template-columns: repeat(4, 20rem);
+  -ms-grid-columns: (20%)[4];
+      grid-template-columns: repeat(4, 20%);
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   -webkit-box-pack: center;
@@ -155,24 +155,110 @@ h1 {
   font-size: 6.5rem;
 }
 
-.container {
-  overflow-x: scroll;
+html {
   overflow-y: hidden;
-  white-space: nowrap;
 }
 
-.container .person {
-  display: inline-block;
+html .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+html .container .section {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   height: 100vh;
-  width: 80vw;
+}
+
+html .container .person {
+  width: 95vw;
   background-color: #3C3C3C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.container .animal {
-  display: inline-block;
-  height: 100vh;
+html .container .person img {
+  height: 100%;
+}
+
+html .container .person .info {
+  padding: 2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: ButlerStencil, serif;
+  color: #EBEBEB;
+  font-weight: 700;
+}
+
+html .container .person .info .title {
+  font-size: 12rem;
+  margin-bottom: 2rem;
+}
+
+html .container .person .info .desc {
+  font-size: 4rem;
+  opacity: 0.3;
+  line-height: 5rem;
+}
+
+html .container .animal {
   width: 100vw;
+  background-color: #EBEBEB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+html .container .animal img {
+  height: 80%;
+  margin-bottom: 0rem;
+}
+
+html .container .animal .first-img-text {
+  margin: 0 0 10rem -25rem;
+  height: 30rem;
+}
+
+html .container .conclusion {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+html .container .conclusion .second-img-text img {
+  margin: 30rem 15rem;
+  height: 25rem;
+}
+
+html .container .isabel {
+  background-color: #F7D540;
+}
+
+html .container .nadege {
+  background-color: #E07748;
+}
+
+html .container .gabriela {
+  background-color: #726866;
+}
+
+html .container .rosa {
   background-color: #509FC5;
-  margin: 0 -10px;
 }
 /*# sourceMappingURL=images.css.map */

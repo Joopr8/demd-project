@@ -1,42 +1,105 @@
 @import "../../stylesheets/atoms/base";
 
 html {
-  background-image: url("../../images/gradient2.png");
+  background-image: url("../../images/background1.gif");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.title {
+.container {
   margin: 15rem 10rem;
-  color: $white;
-  font-family: $butler;
-  font-weight: $bold;
-  text-decoration: none;
-  line-height: 8rem;
-  opacity: 0.8;
 
-  &:hover {
+  @include hd {
+    margin: 12rem 7rem;
+  }
+
+  @include desktop {
+    margin: 9rem 4rem;
+  }
+
+  @include tablet {
+    font-size: 4rem;
+  }
+
+  @include phablet {
+    margin: 5rem 3rem;
+  }
+
+  .title {
+    color: $white;
+    font-family: $butler;
+    font-weight: $bold;
+    text-decoration: none;
+    line-height: 8rem;
+    margin-bottom: 5rem;
+
+    @include hd {
+      font-size: 6rem;
+      line-height: 7rem;
+    }
+
+    @include desktop {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    @include tablet {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    @include phablet {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    &:hover {
+      .cta {
+        background-size: 100%;
+      }
+    }
+
     .cta {
-      background-size: 100%;
+      background-image: linear-gradient(
+        transparent calc(65% - 10px),
+        darken($blue, 15%) 5px
+      );
+      background-size: 0;
+      background-repeat: no-repeat;
+      display: inline;
+      transition: 0.9s ease-out;
+      z-index: -1;
     }
   }
 
   .cta {
-    background-image: linear-gradient(
-      transparent calc(65% - 10px),
-      darken($blue, 15%) 5px
-    );
-    background-size: 0;
-    background-repeat: no-repeat;
-    display: inline;
-    transition: 0.9s ease-out;
-    z-index: -1;
+    color: $white;
+    text-decoration: none;
   }
-}
 
-.cta {
-  color: $white;
-  text-decoration: none;
+  .authors {
+    color: $white;
+    font-family: $butler;
+    font-weight: $bold;
+    font-size: 2rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .blue {
+      color: $blue;
+    }
+
+    .pink {
+      color: $pink;
+    }
+
+    .orange {
+      color: $orange;
+    }
+  }
 }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,WADS,CACT,GAAG,CAAC;EACF,KAAK,EAAE,MAAM;CACd",
+    "sources": [
+        "shoes.scss"
+    ],
+    "names": [],
+    "file": "shoes.css"
+}

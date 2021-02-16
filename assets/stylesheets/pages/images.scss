@@ -1,24 +1,92 @@
 @import "../../stylesheets/atoms/base";
 
-.container {
-  overflow-x: scroll;
+html {
   overflow-y: hidden;
-  white-space: nowrap;
 
-  .person {
-    display: inline-block;
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 
-    height: 100vh;
-    width: 80vw;
-    background-color: $black;
-  }
+    .section {
+      flex: 0 0 auto;
+      height: 100vh;
+    }
 
-  .animal {
-    display: inline-block;
+    .person {
+      width: 95vw;
+      background-color: $black;
+      display: flex;
 
-    height: 100vh;
-    width: 100vw;
-    background-color: $blue;
-    margin: 0 -10px;
+      img {
+        height: 100%;
+      }
+
+      .info {
+        padding: 2rem;
+        align-self: flex-end;
+        font-family: $butler;
+        color: $white;
+        font-weight: $bold;
+
+        .title {
+          font-size: 12rem;
+          margin-bottom: 2rem;
+        }
+
+        .desc {
+          font-size: 4rem;
+          opacity: 0.3;
+          line-height: 5rem;
+        }
+      }
+    }
+
+    .animal {
+      width: 100vw;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      img {
+        height: 80%;
+        margin-bottom: 0rem;
+      }
+
+      .first-img-text {
+        margin: 0 0 10rem -25rem;
+        height: 30rem;
+      }
+    }
+
+    .conclusion {
+      width: 90vw;
+      display: flex;
+      justify-content: flex-end;
+
+      .second-img-text {
+        img {
+          margin: 30rem 15rem;
+          height: 25rem;
+        }
+      }
+    }
+
+    .isabel {
+      background-color: $yellow;
+    }
+
+    .nadege {
+      background-color: $orange;
+    }
+
+    .gabriela {
+      background-color: $soft-black;
+    }
+
+    .rosa {
+      background-color: $blue;
+    }
   }
 }
